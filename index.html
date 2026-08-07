@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel Odhiambo — Premium Designer & Developer</title>
+  <meta name="description" content="Samuel Odhiambo is a Logo Designer, Brand Designer, Vibe Coder, Digital Marketing Manager, and Social Media Strategist based in Kenya.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2338bdf8'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='18' fill='%23060b14'>S</text></svg>">
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-words">
+      <span class="animated-word">Creative.</span>
+      <span class="animated-word">Strategic.</span>
+      <span class="animated-word">Vibe Coder.</span>
+      <span class="animated-word">Welcome.</span>
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="custom-cursor" id="customCursor"></div>
+
+  <!-- PARTICLES BACKGROUND -->
+  <canvas id="particlesCanvas"></canvas>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">S</span>
+        Samuel<span style="color: var(--accent);">.</span>
+      </a>
+      
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== SOCIAL SIDEBAR ====== -->
+  <div class="social-sidebar" id="socialSidebar">
+    <a href="#" title="LinkedIn" aria-label="LinkedIn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="#" title="GitHub" aria-label="GitHub">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+    </a>
+    <a href="#" title="Twitter / X" aria-label="Twitter">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+  </div>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero" id="home">
+    <div class="hero-video-bg">
+      <video autoplay loop muted playsinline>
+        <source src="https://cdn.pixabay.com/video/2021/08/04/83866-584737213_large.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+    
+    <div class="hero-orbs">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-greeting">
+          <span class="wave">👋</span> Welcome to my creative universe
+        </span>
+        
+        <h1 class="hero-title">
+          <span id="typewriterName" class="name-gradient"></span><span class="typed-cursor"></span>
+          <br>
+          <span class="accent-line">Designer & Coder.</span>
+        </h1>
+
+        <p class="hero-description">
+          I'm a multidisciplinary creative bridging the gap between aesthetics and functionality. From striking brand identities and digital marketing to robust web applications and vibe coding.
+        </p>
+
+        <div class="hero-tags">
+          <span class="tag">UI/UX Design</span>
+          <span class="tag">Full Stack Web</span>
+          <span class="tag">Brand Strategy</span>
+          <span class="tag">Digital Content</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">
+            Start a Project
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#projects" class="btn-secondary">
+            View My Work
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-asterisk">✳</div>
+        <div class="hero-image-container">
+          <div class="hero-image-glow"></div>
+          
+          <div class="hero-image-frame">
+            <img src="images/profile-photo.png" alt="Samuel Odhiambo" id="heroProfileImg">
+          </div>
+          
+          <div class="hero-orbit">
+            <span class="orbit-dot"></span>
+            <span class="orbit-dot"></span>
+            <span class="orbit-dot"></span>
+          </div>
+          
+          <!-- Floating Badges -->
+          <div class="hero-float-badge badge-top">
+            <div class="badge-icon">✨</div>
+            <div class="badge-text">
+              <strong>15+</strong>
+              Satisfied Clients
+            </div>
+          </div>
+          
+          <div class="hero-float-badge badge-bottom">
+            <div class="badge-icon">🚀</div>
+            <div class="badge-text">
+              <strong>Vibe Coder</strong>
+              & Developer
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MARQUEE STRIP ====== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <div class="marquee-item">Logo Design <div class="dot"></div></div>
+      <div class="marquee-item">Web Development <div class="dot"></div></div>
+      <div class="marquee-item">Brand Identity <div class="dot"></div></div>
+      <div class="marquee-item">Digital Marketing <div class="dot"></div></div>
+      <div class="marquee-item">Social Media <div class="dot"></div></div>
+      <div class="marquee-item">Vibe Coding <div class="dot"></div></div>
+      <div class="marquee-item">Logo Design <div class="dot"></div></div>
+      <div class="marquee-item">Web Development <div class="dot"></div></div>
+      <div class="marquee-item">Brand Identity <div class="dot"></div></div>
+      <div class="marquee-item">Digital Marketing <div class="dot"></div></div>
+      <div class="marquee-item">Social Media <div class="dot"></div></div>
+      <div class="marquee-item">Vibe Coding <div class="dot"></div></div>
+    </div>
+  </div>
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p class="section-label">About Me</p>
+          <h2 class="section-title">
+            Crafting Digital <br>
+            <em>Experiences</em>
+          </h2>
+          <p>
+            I'm Samuel Odhiambo, a dedicated professional with a passion for transforming ideas into compelling visual stories and interactive digital platforms. My journey spans across graphic design, coding, and marketing strategies.
+          </p>
+          <p>
+            I am currently architecting a <strong style="color: var(--accent);">Table Banking System</strong> — a fintech solution to streamline community savings. Whether it's designing a memorable logo, orchestrating a social media campaign, or developing a custom web app, I bring a unique blend of creativity and technical precision to every project.
+          </p>
+
+          <div class="about-highlights">
+            <span class="highlight">Creative Problem Solving</span>
+            <span class="highlight">Full-Stack Development</span>
+            <span class="highlight">Brand Strategy & Identity</span>
+            <span class="highlight">Digital Content Management</span>
+          </div>
+        </div>
+
+        <div class="stats-grid reveal-right delay-2">
+          <div class="stat-card">
+            <div class="stat-number" data-target="25" data-suffix="+">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="15" data-suffix="+">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="3" data-suffix="+">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="100" data-suffix="%">0</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SERVICES SECTION ====== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="reveal-scale" style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <p class="section-label" style="justify-content: center;">Capabilities</p>
+        <h2 class="section-title">My Premium <em>Services</em></h2>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal delay-1">
+          <div class="service-number">01</div>
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Brand & Logo Design</h3>
+          <p>Crafting striking visual identities, memorable logos, and comprehensive brand guidelines that resonate with your target audience and stand the test of time.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal delay-2">
+          <div class="service-number">02</div>
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Architecting robust, responsive, and high-performance websites and web applications tailored to your business needs, featuring modern UI/UX design.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal delay-3">
+          <div class="service-number">03</div>
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Executing data-driven digital marketing campaigns and social media management strategies to amplify your reach, engage users, and drive meaningful conversions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SKILLS SECTION ====== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="reveal-scale" style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <p class="section-label" style="justify-content: center;">Expertise</p>
+        <h2 class="section-title">Technical <em>Skills</em></h2>
+      </div>
+
+      <div class="skills-content">
+        <div class="skill-bars reveal-left">
+          <div class="skill-item">
+            <label>Brand & Logo Design <span>95%</span></label>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <label>UI/UX & Web Development <span>90%</span></label>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <label>Social Media Management <span>88%</span></label>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="88"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <label>Digital Content Strategy <span>92%</span></label>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="92"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tools-grid reveal-right delay-2">
+          <div class="tool-card">
+            <div class="tool-icon">🎨</div>
+            <div class="tool-name">Photoshop</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">✒️</div>
+            <div class="tool-name">Illustrator</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">💻</div>
+            <div class="tool-name">Web Tech</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">📈</div>
+            <div class="tool-name">Analytics</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">📱</div>
+            <div class="tool-name">Meta Suite</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">✍️</div>
+            <div class="tool-name">Content</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS SECTION ====== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="reveal-scale" style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <p class="section-label" style="justify-content: center;">Portfolio</p>
+        <h2 class="section-title">Selected <em>Works</em></h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Table Banking System -->
+        <div class="project-card reveal delay-1">
+          <div class="project-image">
+            <img src="images/project-table-banking.png" alt="Table Banking System" loading="lazy">
+            <div class="project-overlay">
+              <button class="project-overlay-btn">View Case Study</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Web Development / Fintech</span>
+            <h3>Table Banking System</h3>
+            <p>A comprehensive web application designed to manage community group savings, loan tracking, and member profiles with a modern dark-mode dashboard.</p>
+            <div class="project-tags">
+              <span>Full Stack</span>
+              <span>Dashboard UI</span>
+              <span>Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: VMORE Logo -->
+        <div class="project-card reveal delay-2">
+          <div class="project-image">
+            <img src="images/project-vmore-logo.jpg" alt="VMORE Gift Shop Logo Design" loading="lazy">
+            <div class="project-overlay">
+              <button class="project-overlay-btn">View Case Study</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Logo Design</span>
+            <h3>VMORE Heritage Logo</h3>
+            <p>Created an intricate, cultural logo design for VMORE Gift Shop, blending traditional African motifs with premium, modern typographic elements.</p>
+            <div class="project-tags">
+              <span>Branding</span>
+              <span>Vector</span>
+              <span>Identity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: VMORE Banner -->
+        <div class="project-card reveal delay-3">
+          <div class="project-image">
+            <img src="images/project-vmore-banner.jpg" alt="VMORE Gift Shop Brand Design" loading="lazy">
+            <div class="project-overlay">
+              <button class="project-overlay-btn">View Case Study</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Print & Brand Design</span>
+            <h3>VMORE Rollup Banner</h3>
+            <p>Designed visually striking marketing collateral for physical events, maintaining brand consistency and communicating product value effectively.</p>
+            <div class="project-tags">
+              <span>Print</span>
+              <span>Marketing</span>
+              <span>Layout</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Digital Marketing -->
+        <div class="project-card reveal delay-1">
+          <div class="project-image">
+            <img src="images/project-digital-marketing.png" alt="Digital Marketing Campaign" loading="lazy">
+            <div class="project-overlay">
+              <button class="project-overlay-btn">View Case Study</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Digital Marketing</span>
+            <h3>Campaign Strategy Analytics</h3>
+            <p>Developed and executed a comprehensive social media marketing strategy, tracked via custom dashboards showcasing engagement and growth metrics.</p>
+            <div class="project-tags">
+              <span>Strategy</span>
+              <span>Analytics</span>
+              <span>Social</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Content Management -->
+        <div class="project-card reveal delay-2">
+          <div class="project-image">
+            <img src="images/project-content-management.png" alt="Content Management System" loading="lazy">
+            <div class="project-overlay">
+              <button class="project-overlay-btn">View Case Study</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Content Strategy</span>
+            <h3>CMS & Content Hub</h3>
+            <p>Managed a digital content ecosystem, coordinating blog posts, media assets, and SEO performance within a centralized management system.</p>
+            <div class="project-tags">
+              <span>CMS</span>
+              <span>SEO</span>
+              <span>Content</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS SECTION ====== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="reveal-scale" style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <p class="section-label" style="justify-content: center;">Client Voices</p>
+        <h2 class="section-title">What They <em>Say</em></h2>
+      </div>
+
+      <div class="testimonial-carousel reveal delay-2">
+        <div class="testimonial-card" id="testimonialCard">
+          <div class="testimonial-stars" id="testimonialStars">★★★★★</div>
+          <blockquote id="testimonialQuote">
+            "Working with Samuel was an absolute pleasure! Their keen eye for detail and user-centric approach truly elevated our project. From concept to execution, they guided us seamlessly through the design and branding process, delivering results that exceeded our expectations."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar" id="testimonialAvatar">V</div>
+            <div class="testimonial-author-info">
+              <h4 id="testimonialName">VMORE Gift Shop</h4>
+              <p id="testimonialRole">Brand Identity Client</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-nav" id="testimonialNav">
+          <span class="testimonial-dot active" data-index="0"></span>
+          <span class="testimonial-dot" data-index="1"></span>
+          <span class="testimonial-dot" data-index="2"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT SECTION ====== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="reveal-scale" style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <p class="section-label" style="justify-content: center;">Get In Touch</p>
+        <h2 class="section-title">Let's Create <em>Together</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Ready to elevate your brand?</h3>
+          <p>Whether you need a dynamic web app, a refreshed brand identity, or a comprehensive digital marketing strategy, I'm ready to bring your vision to life.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <p class="contact-method-label">Phone</p>
+                <p class="contact-method-value">+254 759 208 580</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <p class="contact-method-label">Email</p>
+                <p class="contact-method-value">254.ochola@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <p class="contact-method-label">Location</p>
+                <p class="contact-method-value">Nairobi, Kenya</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card reveal-right delay-2">
+          <h3>Send a Message</h3>
+          <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Full Name</label>
+                <input type="text" id="contactName" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">Phone</label>
+                <input type="tel" id="contactPhone" name="phone" placeholder="+254 7XX XXX XXX">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="subject" placeholder="Project Inquiry" required>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" placeholder="Tell me about your project vision..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          Samuel<span style="color: var(--accent);">.</span>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Samuel Odhiambo. Designed & Developed with Passion.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== BACK TO TOP ====== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- ====== JAVASCRIPT ====== -->
+  <script src="script.js"></script>
+</body>
+</html>
